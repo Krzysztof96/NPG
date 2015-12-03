@@ -1,5 +1,5 @@
 #include<iostream.h>
-
+komentarz
 int main(void)
 {
   unsigned long a,b;
