@@ -1,4 +1,4 @@
-%Ciag Fibonacciego    cfibonacciego.m  % program g³ówny
+﻿Zmiana pierwszej linijki
 %
 n=input('Podajcie liczbe wyrazow ciagu: ');//bla
 fibonacci(n);
