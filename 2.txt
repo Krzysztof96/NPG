@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+Oerlikon zmienia 2 linijke
 #include<string.h>
 
 #include<math.h>
