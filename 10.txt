@@ -1,0 +1,31 @@
+%Ciag Fibonacciego    cfibonacciego.m  % program g³ówny
+%
+n=input('Podaj liczbe wyrazow ciagu: ');
+fibonacci(n);
+
+
+
+function y=fibonacci(n) %fibonacci.m - funkcja
+if n==1
+    y(1)=1;
+    disp(['a(1)=',num2str(y(1))]);
+elseif n==2
+    y(1)=1;
+    y(2)=1;
+        for i=1:n
+           disp(['a(',num2str(i),')=',num2str(y(i))]);
+        end
+elseif n>2
+           y(1)=1;
+           y(2)=1;
+           disp('a(1)=1');
+           disp('a(2)=1');     
+           for i=3:n
+               y(i)=y(i-2)+y(i-1);
+               disp(['a(',num2str(i),')=',num2str(y(i))]);
+           end
+else
+    disp('zle n!');
+end
+z=1:n;
+plot(z,y);
