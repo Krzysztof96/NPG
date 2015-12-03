@@ -61,5 +61,3 @@ if((i%2)==1) tab[j++]=i;
 }
 
 return(pierwsze(n,pier,k+1,tab));
-
-}

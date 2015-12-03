@@ -49,5 +49,3 @@ fclose(dane);
 printf("Nazwisko %s zostalo znalezione %d razy\n",argv[2],licznik);
 
 return(0);
-
-}

@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 /*Wczytanie macierzy z pliku*/
 
@@ -63,5 +62,3 @@ printf("\n");
 }
 
 }//else
-
-}//koniec funkcji

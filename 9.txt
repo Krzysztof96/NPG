@@ -1,99 +1,64 @@
-#include <stdio.h>
-
-#include <conio.h>
-
-#include<stdlib.h>
-
-void RysujSzachownice();
-
-char line[100];
-
-//zmienna potrzebna do fgets
-
-void main()
-
-{
-
-while(1)
-
-{
-
-fflush(stdin);
-
-//zerowanie bufora fgets
-
-RysujSzachownice();
-
-gotoxy(45,3);
-
-printf("Szachownica :-)");
-
-getch();
-
-clrscr();
 
 }
 
-}//koniec main
-
-//Funkcja rysujaca szachownice
-
-void RysujSzachownice()
+int wystap(FILE *plik,char slowo[30])
 
 {
 
-int i;
+int i=0;
 
-int j;
+char buf[30];
 
-int k;
+printf("%s\n",slowo);
 
-gotoxy(0,0);
+fseek(plik,0,SEEK_SET);
 
-printf(" ");
-
-for(i=0;i<8;i++)
-
-printf("%c%c%d%c%c",32,32,i+1,32,32);
-
-printf("\n");
-
-for(j=0; j<8; j++)
+while(!feof(plik))
 
 {
 
-for(k=0; k<3; k++)
+fscanf(plik,"%s",buf);
 
-{
+printf("%s\n",buf);
 
-if (k==1) printf("%c",j+65);
+if((strcmp(buf,slowo)==0))
 
-else printf("%c",32);
-
-for(i=0; i<8; i++)
-
-{
-
-if((i+j)%2==0) textcolor(15);
-
-else textcolor(7);
-
-cprintf("%c%c%c%c%c",219,219,219,219,219);
+i++;
 
 }
 
-if (k==1) printf("%c",j+65);
-
-else printf("%c",32);
-
-printf("\n");
+return i;
 
 }
 
+main(int argc,char*argv[])
+
+{
+
+FILE *plik;
+
+char buf[20];
+
+int s,w;
+
+plik=fopen(argv[1],"r");
+
+if (argc!=3)
+
+{
+
+printf("zla liczba parametrow\n");
+
+exit(1);
+
 }
 
-printf(" ");
+s=slowa(plik);
 
-for(i=0;i<8;i++)
+w=wystap(plik,argv[2]);
 
-printf("%c%c%d%c%c",32,32,i+1,32,32);
+printf("Ilosc slow w podanym pliku: %d\n",s);
+
+printf("Ilosc wystapien szukanego slowa: %d\n",w);
+
+}
