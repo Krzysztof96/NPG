@@ -1,6 +1,6 @@
-%Ciag Fibonacciego    cfibonacciego.m  % program g³ówny
+%Ciag Fibonacciego    cfibonacciego.m  % program gÂ³Ã³wny
 %
-n=input('Podaj liczbe wyrazow ciagu: ');
+n=input('Podajcie liczbe wyrazow ciagu: ');//bla
 fibonacci(n);
 
 
