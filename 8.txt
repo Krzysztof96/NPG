@@ -3,7 +3,7 @@
 n=input('Podaj liczbe wyrazow ciagu: ');
 fibonacci(n);
 
-
+12312312
 
 function y=fibonacci(n) %fibonacci.m - funkcja
 if n==1
