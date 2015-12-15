@@ -8,6 +8,9 @@ char line[1000];
 
 main()
 
+
+intabcd;
+
 {
 
 char operator;
