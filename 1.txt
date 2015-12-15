@@ -1,4 +1,5 @@
 razdwaraz
+trzycztery
 #include<iostream.h>
 komentarz
 int main(void)
