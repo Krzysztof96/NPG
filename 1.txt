@@ -6,6 +6,9 @@ int main(void)
 {
   unsigned long a,b;
 
+
+sadasd
+
   cout <<"Podaj a = ";
   cin  >> a;
   cout <<"Podaj b = ";
