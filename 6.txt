@@ -3,6 +3,8 @@ proba11
 
 int wystap(FILE *plik,char slowo[30])
 
+asdsadasd
+
 {
 
 int i=0;
