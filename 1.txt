@@ -1,3 +1,4 @@
+razdwaraz
 #include<iostream.h>
 komentarz
 int main(void)
