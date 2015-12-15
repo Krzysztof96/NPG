@@ -1,3 +1,4 @@
+13312321312
 //"plik z nazwiskami" i "szukane nazwisko" podajemy jako parametry wywo³ania programu
 
 #include <stdio.h>

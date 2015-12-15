@@ -1,4 +1,4 @@
-
+23213123123
 }
 
 int wystap(FILE *plik,char slowo[30])

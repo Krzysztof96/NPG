@@ -1,9 +1,13 @@
 razdwaraz
+trzycztery
 #include<iostream.h>
 komentarz
 int main(void)
 {
   unsigned long a,b;
+
+
+sadasd
 
   cout <<"Podaj a = ";
   cin  >> a;

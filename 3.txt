@@ -9,6 +9,9 @@ int main()
 
 {
 
+
+int a,b,c,d;
+
 int n;
 
 int i;
