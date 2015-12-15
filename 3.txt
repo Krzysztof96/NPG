@@ -1,4 +1,5 @@
 #include <stdio.h>
+dasdasdasd
 
 int pierwsze(int n,int pier,int k, int tab[]);
 
